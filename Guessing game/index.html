@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+</head>
+<body>
+	
+	<input type="text" id="text">
+	<button id="buton">Gönder</button>
+	<p>Sonuç:</p>
+	<p id="metin"></p>
+
+	<script type="text/javascript">
+		document.getElementById("buton").onclick=function() {
+			var sifre ="maydonoz"
+			var girilenkelime=document.getElementById("text").value;
+			if(sifre==girilenkelime) {
+				document.getElementById("metin").innerHTML="Doğru bildiniz";
+			}
+			else { 
+				document.getElementById("metin").innerHTML="Yanlış bildiniz";
+			}
+		}
+
+	</script>
+</body>
+</html>
